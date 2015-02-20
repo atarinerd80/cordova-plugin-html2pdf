@@ -846,7 +846,8 @@ public class Html2pdf extends CordovaPlugin
 					}
 					break;
 				default:
-					self.pageSize = kPaperSizeLetterPortrait;
+					pageWidth  = PageSize.LETTER.getWidth()  * 0.85;
+					pageHeight = PageSize.LETTER.getHeight() * 0.80;
 					break;
 			}
 			
