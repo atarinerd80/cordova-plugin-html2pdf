@@ -10,12 +10,7 @@
     <license>MIT</license>
     <author>Modern Alchemists OG</author>
     <description>
-      &lt;p&gt;This is a plugin converts the given html to a pdf document and stores it on the device.&lt;/p&gt;
-	  
-	  This Plugin requires iText.jar to be added to your project. Here is the last open source version (4.2.0) of it:    
-
-		GitHub: https://github.com/ymasory/iText-4.2.0
-		Download .jar:: https://github.com/ymasory/iText-4.2.0/downloads
+      &lt;p&gt;This is a plugin converts the given html to a pdf document and stores it on the device.&lt;/p&gt;	  	 
     </description>
 
     <js-module src="www/Html2pdf.js" name="Html2pdf">
@@ -29,7 +24,7 @@
                 <param name="android-package" value="at.modalog.cordova.plugin.html2pdf.Html2pdf"/>
             </feature>
         </config-file>
-
+		<source-file src="src/android/iText-4.2.0.jar" target-dir="libs/" />
         <source-file src="src/android/Html2pdf.java" target-dir="src/at/modalog/cordova/plugin/html2pdf" />
     </platform>
     
