@@ -18,8 +18,8 @@ import com.lowagie.text.Image;
 import com.lowagie.text.PageSizes;
 import com.lowagie.text.pdf.PdfWriter;
 
-import pageOptions.PageSizess;
-import pageOptions.pageOrientationss;
+import pageOptions.PageSizes;
+import pageOptions.pageOrientations;
 
 import android.R.bool;
 import android.annotation.TargetApi;
@@ -420,435 +420,435 @@ public class Html2pdf extends CordovaPlugin
 			
             switch (pageOrientation)
 			{
-				case PageOrientations.Portrait:
+				case Portrait:
 					switch (pageSize)
 					{
-						case PageSizes.Letter:
-							pageWidth  = PageSizes.LETTER.getWidth()  * 0.85;
-							pageHeight = PageSizes.LETTER.getHeight() * 0.80;
+						case Letter:
+							pageWidth  = PageSize.LETTER.getWidth()  * 0.85;
+							pageHeight = PageSize.LETTER.getHeight() * 0.80;
 							break;
-						case PageSizes.Note:
-							pageWidth  = PageSizes.NOTE.getWidth()  * 0.85;
-							pageHeight = PageSizes.NOTE.getHeight() * 0.80;
+						case Note:
+							pageWidth  = PageSize.NOTE.getWidth()  * 0.85;
+							pageHeight = PageSize.NOTE.getHeight() * 0.80;
 							break;
-						case PageSizes.Legal:
-							pageWidth  = PageSizes.LEGAL.getWidth()  * 0.85;
-							pageHeight = PageSizes.LEGAL.getHeight() * 0.80;
+						case Legal:
+							pageWidth  = PageSize.LEGAL.getWidth()  * 0.85;
+							pageHeight = PageSize.LEGAL.getHeight() * 0.80;
 							break;
-						case PageSizes.Tabloid:
-							pageWidth  = PageSizes.TABLOID.getWidth()  * 0.85;
-							pageHeight = PageSizes.TABLOID.getHeight() * 0.80;
+						case Tabloid:
+							pageWidth  = PageSize.TABLOID.getWidth()  * 0.85;
+							pageHeight = PageSize.TABLOID.getHeight() * 0.80;
 							break;
-						case PageSizes.Executive:
-							pageWidth  = PageSizes.EXECUTIVE.getWidth()  * 0.85;
-							pageHeight = PageSizes.EXECUTIVE.getHeight() * 0.80;
+						case Executive:
+							pageWidth  = PageSize.EXECUTIVE.getWidth()  * 0.85;
+							pageHeight = PageSize.EXECUTIVE.getHeight() * 0.80;
 							break;
-						case PageSizes.Postcard:
-							pageWidth  = PageSizes.POSTCARD.getWidth()  * 0.85;
-							pageHeight = PageSizes.POSTCARD.getHeight() * 0.80;
+						case Postcard:
+							pageWidth  = PageSize.POSTCARD.getWidth()  * 0.85;
+							pageHeight = PageSize.POSTCARD.getHeight() * 0.80;
 							break;
-						case PageSizes.A0:
-							pageWidth  = PageSizes.A0.getWidth()  * 0.85;
-							pageHeight = PageSizes.A0.getHeight() * 0.80;
+						case A0:
+							pageWidth  = PageSize.A0.getWidth()  * 0.85;
+							pageHeight = PageSize.A0.getHeight() * 0.80;
 							break;
-						case PageSizes.A1:
-							pageWidth  = PageSizes.A1.getWidth()  * 0.85;
-							pageHeight = PageSizes.A1.getHeight() * 0.80;
+						case A1:
+							pageWidth  = PageSize.A1.getWidth()  * 0.85;
+							pageHeight = PageSize.A1.getHeight() * 0.80;
 							break;
-						case PageSizes.A2:
-							pageWidth  = PageSizes.A2.getWidth()  * 0.85;
-							pageHeight = PageSizes.A2.getHeight() * 0.80;
+						case A2:
+							pageWidth  = PageSize.A2.getWidth()  * 0.85;
+							pageHeight = PageSize.A2.getHeight() * 0.80;
 							break;
-						case PageSizes.A3:
-							pageWidth  = PageSizes.A3.getWidth()  * 0.85;
-							pageHeight = PageSizes.A3.getHeight() * 0.80;
+						case A3:
+							pageWidth  = PageSize.A3.getWidth()  * 0.85;
+							pageHeight = PageSize.A3.getHeight() * 0.80;
 							break;
-						case PageSizes.A4:
-							pageWidth  = PageSizes.A4.getWidth()  * 0.85;
-							pageHeight = PageSizes.A4.getHeight() * 0.80;
+						case A4:
+							pageWidth  = PageSize.A4.getWidth()  * 0.85;
+							pageHeight = PageSize.A4.getHeight() * 0.80;
 							break;
-						case PageSizes.A5:
-							pageWidth  = PageSizes.A5.getWidth()  * 0.85;
-							pageHeight = PageSizes.A5.getHeight() * 0.80;
+						case A5:
+							pageWidth  = PageSize.A5.getWidth()  * 0.85;
+							pageHeight = PageSize.A5.getHeight() * 0.80;
 							break;
-						case PageSizes.A6:
-							pageWidth  = PageSizes.A6.getWidth()  * 0.85;
-							pageHeight = PageSizes.A6.getHeight() * 0.80;
+						case A6:
+							pageWidth  = PageSize.A6.getWidth()  * 0.85;
+							pageHeight = PageSize.A6.getHeight() * 0.80;
 							break;
-						case PageSizes.A7:
-							pageWidth  = PageSizes.A7.getWidth()  * 0.85;
-							pageHeight = PageSizes.A7.getHeight() * 0.80;
+						case A7:
+							pageWidth  = PageSize.A7.getWidth()  * 0.85;
+							pageHeight = PageSize.A7.getHeight() * 0.80;
 							break;
-						case PageSizes.A8:
-							pageWidth  = PageSizes.A8.getWidth()  * 0.85;
-							pageHeight = PageSizes.A8.getHeight() * 0.80;
+						case A8:
+							pageWidth  = PageSize.A8.getWidth()  * 0.85;
+							pageHeight = PageSize.A8.getHeight() * 0.80;
 							break;
-						case PageSizes.A9:
-							pageWidth  = PageSizes.A9.getWidth()  * 0.85;
-							pageHeight = PageSizes.A9.getHeight() * 0.80;
+						case A9:
+							pageWidth  = PageSize.A9.getWidth()  * 0.85;
+							pageHeight = PageSize.A9.getHeight() * 0.80;
 							break;
-						case PageSizes.A10:
-							pageWidth  = PageSizes.A10.getWidth()  * 0.85;
-							pageHeight = PageSizes.A10.getHeight() * 0.80;
+						case A10:
+							pageWidth  = PageSize.A10.getWidth()  * 0.85;
+							pageHeight = PageSize.A10.getHeight() * 0.80;
 							break;
-						case PageSizes.B0:
-							pageWidth  = PageSizes.B0.getWidth()  * 0.85;
-							pageHeight = PageSizes.B0.getHeight() * 0.80;
+						case B0:
+							pageWidth  = PageSize.B0.getWidth()  * 0.85;
+							pageHeight = PageSize.B0.getHeight() * 0.80;
 							break;
-						case PageSizes.B1:
-							pageWidth  = PageSizes.B1.getWidth()  * 0.85;
-							pageHeight = PageSizes.B1.getHeight() * 0.80;
+						case B1:
+							pageWidth  = PageSize.B1.getWidth()  * 0.85;
+							pageHeight = PageSize.B1.getHeight() * 0.80;
 							break;
-						case PageSizes.B2:
-							pageWidth  = PageSizes.B2.getWidth()  * 0.85;
-							pageHeight = PageSizes.B2.getHeight() * 0.80;
+						case B2:
+							pageWidth  = PageSize.B2.getWidth()  * 0.85;
+							pageHeight = PageSize.B2.getHeight() * 0.80;
 							break;
-						case PageSizes.B3:
-							pageWidth  = PageSizes.B3.getWidth()  * 0.85;
-							pageHeight = PageSizes.B3.getHeight() * 0.80;
+						case B3:
+							pageWidth  = PageSize.B3.getWidth()  * 0.85;
+							pageHeight = PageSize.B3.getHeight() * 0.80;
 							break;
-						case PageSizes.B4:
-							pageWidth  = PageSizes.B4.getWidth()  * 0.85;
-							pageHeight = PageSizes.B4.getHeight() * 0.80;
+						case B4:
+							pageWidth  = PageSize.B4.getWidth()  * 0.85;
+							pageHeight = PageSize.B4.getHeight() * 0.80;
 							break;
-						case PageSizes.B5:
-							pageWidth  = PageSizes.B5.getWidth()  * 0.85;
-							pageHeight = PageSizes.B5.getHeight() * 0.80;
+						case B5:
+							pageWidth  = PageSize.B5.getWidth()  * 0.85;
+							pageHeight = PageSize.B5.getHeight() * 0.80;
 							break;
-						case PageSizes.B6:
-							pageWidth  = PageSizes.B6.getWidth()  * 0.85;
-							pageHeight = PageSizes.B6.getHeight() * 0.80;
+						case B6:
+							pageWidth  = PageSize.B6.getWidth()  * 0.85;
+							pageHeight = PageSize.B6.getHeight() * 0.80;
 							break;
-						case PageSizes.B7:
-							pageWidth  = PageSizes.B7.getWidth()  * 0.85;
-							pageHeight = PageSizes.B7.getHeight() * 0.80;
+						case B7:
+							pageWidth  = PageSize.B7.getWidth()  * 0.85;
+							pageHeight = PageSize.B7.getHeight() * 0.80;
 							break;
-						case PageSizes.B8:
-							pageWidth  = PageSizes.B8.getWidth()  * 0.85;
-							pageHeight = PageSizes.B8.getHeight() * 0.80;
+						case B8:
+							pageWidth  = PageSize.B8.getWidth()  * 0.85;
+							pageHeight = PageSize.B8.getHeight() * 0.80;
 							break;
-						case PageSizes.B9:
-							pageWidth  = PageSizes.B9.getWidth()  * 0.85;
-							pageHeight = PageSizes.B9.getHeight() * 0.80;
+						case B9:
+							pageWidth  = PageSize.B9.getWidth()  * 0.85;
+							pageHeight = PageSize.B9.getHeight() * 0.80;
 							break;
-						case PageSizes.B10:
-							pageWidth  = PageSizes.B10.getWidth()  * 0.85;
-							pageHeight = PageSizes.B10.getHeight() * 0.80;
+						case B10:
+							pageWidth  = PageSize.B10.getWidth()  * 0.85;
+							pageHeight = PageSize.B10.getHeight() * 0.80;
 							break;
-						case PageSizes.ArchE:
-							pageWidth  = PageSizes.ARCH_E.getWidth()  * 0.85;
-							pageHeight = PageSizes.ARCH_E.getHeight() * 0.80;
+						case ArchE:
+							pageWidth  = PageSize.ARCH_E.getWidth()  * 0.85;
+							pageHeight = PageSize.ARCH_E.getHeight() * 0.80;
 							break;
-						case PageSizes.ArchD:
-							pageWidth  = PageSizes.ARCH_D.getWidth()  * 0.85;
-							pageHeight = PageSizes.ARCH_D.getHeight() * 0.80;
+						case ArchD:
+							pageWidth  = PageSize.ARCH_D.getWidth()  * 0.85;
+							pageHeight = PageSize.ARCH_D.getHeight() * 0.80;
 							break;
-						case PageSizes.ArchC:
-							pageWidth  = PageSizes.ARCH_C.getWidth()  * 0.85;
-							pageHeight = PageSizes.ARCH_C.getHeight() * 0.80;
+						case ArchC:
+							pageWidth  = PageSize.ARCH_C.getWidth()  * 0.85;
+							pageHeight = PageSize.ARCH_C.getHeight() * 0.80;
 							break;
-						case PageSizes.ArchB:
-							pageWidth  = PageSizes.ARCH_B.getWidth()  * 0.85;
-							pageHeight = PageSizes.ARCH_B.getHeight() * 0.80;
+						case ArchB:
+							pageWidth  = PageSize.ARCH_B.getWidth()  * 0.85;
+							pageHeight = PageSize.ARCH_B.getHeight() * 0.80;
 							break;
-						case PageSizes.ArchA:
-							pageWidth  = PageSizes.ARCH_A.getWidth()  * 0.85;
-							pageHeight = PageSizes.ARCH_A.getHeight() * 0.80;
+						case ArchA:
+							pageWidth  = PageSize.ARCH_A.getWidth()  * 0.85;
+							pageHeight = PageSize.ARCH_A.getHeight() * 0.80;
 							break;
-						case PageSizes.FLSA:
-							pageWidth  = PageSizes.FLSA.getWidth()  * 0.85;
-							pageHeight = PageSizes.FLSA.getHeight() * 0.80;
+						case FLSA:
+							pageWidth  = PageSize.FLSA.getWidth()  * 0.85;
+							pageHeight = PageSize.FLSA.getHeight() * 0.80;
 							break;
-						case PageSizes.FLSE:
-							pageWidth  = PageSizes.FLSE.getWidth()  * 0.85;
-							pageHeight = PageSizes.FLSE.getHeight() * 0.80;
+						case FLSE:
+							pageWidth  = PageSize.FLSE.getWidth()  * 0.85;
+							pageHeight = PageSize.FLSE.getHeight() * 0.80;
 							break;
-						case PageSizes.HalfLetter:
-							pageWidth  = PageSizes.HALFLETTER.getWidth()  * 0.85;
-							pageHeight = PageSizes.HALFLETTER.getHeight() * 0.80;
+						case HalfLetter:
+							pageWidth  = PageSize.HALFLETTER.getWidth()  * 0.85;
+							pageHeight = PageSize.HALFLETTER.getHeight() * 0.80;
 							break;
-						case PageSizes.Ledger:
-							pageWidth  = PageSizes._11X17.getWidth()  * 0.85;
-							pageHeight = PageSizes._11X17.getHeight() * 0.80;
+						case Ledger:
+							pageWidth  = PageSize._11X17.getWidth()  * 0.85;
+							pageHeight = PageSize._11X17.getHeight() * 0.80;
 							break;
-						case PageSizes.ID1:
-							pageWidth  = PageSizes.ID_1.getWidth()  * 0.85;
-							pageHeight = PageSizes.ID_1.getHeight() * 0.80;
+						case ID1:
+							pageWidth  = PageSize.ID_1.getWidth()  * 0.85;
+							pageHeight = PageSize.ID_1.getHeight() * 0.80;
 							break;
-						case PageSizes.ID2:
-							pageWidth  = PageSizes.ID_2.getWidth()  * 0.85;
-							pageHeight = PageSizes.ID_2.getHeight() * 0.80;
+						case ID2:
+							pageWidth  = PageSize.ID_2.getWidth()  * 0.85;
+							pageHeight = PageSize.ID_2.getHeight() * 0.80;
 							break;
-						case PageSizes.ID3:
-							pageWidth  = PageSizes.ID_3.getWidth()  * 0.85;
-							pageHeight = PageSizes.ID_3.getHeight() * 0.80;
+						case ID3:
+							pageWidth  = PageSize.ID_3.getWidth()  * 0.85;
+							pageHeight = PageSize.ID_3.getHeight() * 0.80;
 							break;
-						case PageSizes.CrownQuarto:
-							pageWidth  = PageSizes.CROWN_QUARTO.getWidth()  * 0.85;
-							pageHeight = PageSizes.CROWN_QUARTO.getHeight() * 0.80;
+						case CrownQuarto:
+							pageWidth  = PageSize.CROWN_QUARTO.getWidth()  * 0.85;
+							pageHeight = PageSize.CROWN_QUARTO.getHeight() * 0.80;
 							break;
-						case PageSizes.LargeCrownQuarto:
-							pageWidth  = PageSizes.LARGE_CROWN_QUARTO.getWidth()  * 0.85;
-							pageHeight = PageSizes.LARGE_CROWN_QUARTO.getHeight() * 0.80;
+						case LargeCrownQuarto:
+							pageWidth  = PageSize.LARGE_CROWN_QUARTO.getWidth()  * 0.85;
+							pageHeight = PageSize.LARGE_CROWN_QUARTO.getHeight() * 0.80;
 							break;
-						case PageSizes.DemyQuarto:
-							pageWidth  = PageSizes.DEMY_QUARTO.getWidth()  * 0.85;
-							pageHeight = PageSizes.DEMY_QUARTO.getHeight() * 0.80;
+						case DemyQuarto:
+							pageWidth  = PageSize.DEMY_QUARTO.getWidth()  * 0.85;
+							pageHeight = PageSize.DEMY_QUARTO.getHeight() * 0.80;
 							break;
-						case PageSizes.RoyalQuarto:
-							pageWidth  = PageSizes.ROYAL_QUARTO.getWidth()  * 0.85;
-							pageHeight = PageSizes.ROYAL_QUARTO.getHeight() * 0.80;
+						case RoyalQuarto:
+							pageWidth  = PageSize.ROYAL_QUARTO.getWidth()  * 0.85;
+							pageHeight = PageSize.ROYAL_QUARTO.getHeight() * 0.80;
 							break;
-						case PageSizes.CrownOctavo:
-							pageWidth  = PageSizes.CROWN_OCTAVO.getWidth()  * 0.85;
-							pageHeight = PageSizes.CROWN_OCTAVO.getHeight() * 0.80;
+						case CrownOctavo:
+							pageWidth  = PageSize.CROWN_OCTAVO.getWidth()  * 0.85;
+							pageHeight = PageSize.CROWN_OCTAVO.getHeight() * 0.80;
 							break;
-						case PageSizes.LargeCrownOctavo:
-							pageWidth  = PageSizes.LARGE_CROWN_OCTAVO.getWidth()  * 0.85;
-							pageHeight = PageSizes.LARGE_CROWN_OCTAVO.getHeight() * 0.80;
+						case LargeCrownOctavo:
+							pageWidth  = PageSize.LARGE_CROWN_OCTAVO.getWidth()  * 0.85;
+							pageHeight = PageSize.LARGE_CROWN_OCTAVO.getHeight() * 0.80;
 							break;
-						case PageSizes.DemyOctavo:
-							pageWidth  = PageSizes.DEMY_OCTAVO.getWidth()  * 0.85;
-							pageHeight = PageSizes.DEMY_OCTAVO.getHeight() * 0.80;
+						case DemyOctavo:
+							pageWidth  = PageSize.DEMY_OCTAVO.getWidth()  * 0.85;
+							pageHeight = PageSize.DEMY_OCTAVO.getHeight() * 0.80;
 							break;
-						case PageSizes.RoyalOctavo:
-							pageWidth  = PageSizes.ROYAL_OCTAVO.getWidth()  * 0.85;
-							pageHeight = PageSizes.ROYAL_OCTAVO.getHeight() * 0.80;
+						case RoyalOctavo:
+							pageWidth  = PageSize.ROYAL_OCTAVO.getWidth()  * 0.85;
+							pageHeight = PageSize.ROYAL_OCTAVO.getHeight() * 0.80;
 							break;
-						case PageSizes.SmallPaperback:
-							pageWidth  = PageSizes.SMALL_PAPERBACK.getWidth()  * 0.85;
-							pageHeight = PageSizes.SMALL_PAPERBACK.getHeight() * 0.80;
+						case SmallPaperback:
+							pageWidth  = PageSize.SMALL_PAPERBACK.getWidth()  * 0.85;
+							pageHeight = PageSize.SMALL_PAPERBACK.getHeight() * 0.80;
 							break;
-						case PageSizes.PenguinSmallPaperback:
-							pageWidth  = PageSizes.PENGUIN_SMALL_PAPERBACK.getWidth()  * 0.85;
-							pageHeight = PageSizes.PENGUIN_SMALL_PAPERBACK.getHeight() * 0.80;
+						case PenguinSmallPaperback:
+							pageWidth  = PageSize.PENGUIN_SMALL_PAPERBACK.getWidth()  * 0.85;
+							pageHeight = PageSize.PENGUIN_SMALL_PAPERBACK.getHeight() * 0.80;
 							break;
-						case PageSizes.PenguinLargePaperback:
-							pageWidth  = PageSizes.PENGUIN_LARGE_PAPERBACK.getWidth()  * 0.85;
-							pageHeight = PageSizes.PENGUIN_LARGE_PAPERBACK.getHeight() * 0.80;
+						case PenguinLargePaperback:
+							pageWidth  = PageSize.PENGUIN_LARGE_PAPERBACK.getWidth()  * 0.85;
+							pageHeight = PageSize.PENGUIN_LARGE_PAPERBACK.getHeight() * 0.80;
 							break;	
 						default:
-							pageWidth  = PageSizes.LETTER.getWidth()  * 0.85;
-							pageHeight = PageSizes.LETTER.getHeight() * 0.80;
+							pageWidth  = PageSize.LETTER.getWidth()  * 0.85;
+							pageHeight = PageSize.LETTER.getHeight() * 0.80;
 							break;
 					}
 					break;
-				case PageOrientation.Landscape:
+				case Landscape:
 					switch (pageSize)
 					{
-						case PageSizes.Letter:
-							pageWidth  = PageSizes.LETTER.getHeight()  * 0.85;
-							pageHeight = PageSizes.LETTER.getWidth() * 0.80;
+						case Letter:
+							pageWidth  = PageSize.LETTER.getHeight()  * 0.85;
+							pageHeight = PageSize.LETTER.getWidth() * 0.80;
 							break;
-						case PageSizes.Note:
-							pageWidth  = PageSizes.NOTE.getHeight()  * 0.85;
-							pageHeight = PageSizes.NOTE.getWidth() * 0.80;
+						case Note:
+							pageWidth  = PageSize.NOTE.getHeight()  * 0.85;
+							pageHeight = PageSize.NOTE.getWidth() * 0.80;
 							break;
-						case PageSizes.Legal:
-							pageWidth  = PageSizes.LEGAL.getHeight()  * 0.85;
-							pageHeight = PageSizes.LEGAL.getWidth() * 0.80;
+						case Legal:
+							pageWidth  = PageSize.LEGAL.getHeight()  * 0.85;
+							pageHeight = PageSize.LEGAL.getWidth() * 0.80;
 							break;
-						case PageSizes.Tabloid:
-							pageWidth  = PageSizes.TABLOID.getHeight()  * 0.85;
-							pageHeight = PageSizes.TABLOID.getWidth() * 0.80;
+						case Tabloid:
+							pageWidth  = PageSize.TABLOID.getHeight()  * 0.85;
+							pageHeight = PageSize.TABLOID.getWidth() * 0.80;
 							break;
-						case PageSizes.Executive:
-							pageWidth  = PageSizes.EXECUTIVE.getHeight()  * 0.85;
-							pageHeight = PageSizes.EXECUTIVE.getWidth() * 0.80;
+						case Executive:
+							pageWidth  = PageSize.EXECUTIVE.getHeight()  * 0.85;
+							pageHeight = PageSize.EXECUTIVE.getWidth() * 0.80;
 							break;
-						case PageSizes.Postcard:
-							pageWidth  = PageSizes.POSTCARD.getHeight()  * 0.85;
-							pageHeight = PageSizes.POSTCARD.getWidth() * 0.80;
+						case Postcard:
+							pageWidth  = PageSize.POSTCARD.getHeight()  * 0.85;
+							pageHeight = PageSize.POSTCARD.getWidth() * 0.80;
 							break;
-						case PageSizes.A0:
-							pageWidth  = PageSizes.A0.getHeight()  * 0.85;
-							pageHeight = PageSizes.A0.getWidth() * 0.80;
+						case A0:
+							pageWidth  = PageSize.A0.getHeight()  * 0.85;
+							pageHeight = PageSize.A0.getWidth() * 0.80;
 							break;
-						case PageSizes.A1:
-							pageWidth  = PageSizes.A1.getHeight()  * 0.85;
-							pageHeight = PageSizes.A1.getWidth() * 0.80;
+						case A1:
+							pageWidth  = PageSize.A1.getHeight()  * 0.85;
+							pageHeight = PageSize.A1.getWidth() * 0.80;
 							break;
-						case PageSizes.A2:
-							pageWidth  = PageSizes.A2.getHeight()  * 0.85;
-							pageHeight = PageSizes.A2.getWidth() * 0.80;
+						case A2:
+							pageWidth  = PageSize.A2.getHeight()  * 0.85;
+							pageHeight = PageSize.A2.getWidth() * 0.80;
 							break;
-						case PageSizes.A3:
-							pageWidth  = PageSizes.A3.getHeight()  * 0.85;
-							pageHeight = PageSizes.A3.getWidth() * 0.80;
+						case A3:
+							pageWidth  = PageSize.A3.getHeight()  * 0.85;
+							pageHeight = PageSize.A3.getWidth() * 0.80;
 							break;
-						case PageSizes.A4:
-							pageWidth  = PageSizes.A4.getHeight()  * 0.85;
-							pageHeight = PageSizes.A4.getWidth() * 0.80;
+						case A4:
+							pageWidth  = PageSize.A4.getHeight()  * 0.85;
+							pageHeight = PageSize.A4.getWidth() * 0.80;
 							break;
-						case PageSizes.A5:
-							pageWidth  = PageSizes.A5.getHeight()  * 0.85;
-							pageHeight = PageSizes.A5.getWidth() * 0.80;
+						case A5:
+							pageWidth  = PageSize.A5.getHeight()  * 0.85;
+							pageHeight = PageSize.A5.getWidth() * 0.80;
 							break;
-						case PageSizes.A6:
-							pageWidth  = PageSizes.A6.getHeight()  * 0.85;
-							pageHeight = PageSizes.A6.getWidth() * 0.80;
+						case A6:
+							pageWidth  = PageSize.A6.getHeight()  * 0.85;
+							pageHeight = PageSize.A6.getWidth() * 0.80;
 							break;
-						case PageSizes.A7:
-							pageWidth  = PageSizes.A7.getHeight()  * 0.85;
-							pageHeight = PageSizes.A7.getWidth() * 0.80;
+						case A7:
+							pageWidth  = PageSize.A7.getHeight()  * 0.85;
+							pageHeight = PageSize.A7.getWidth() * 0.80;
 							break;
-						case PageSizes.A8:
-							pageWidth  = PageSizes.A8.getHeight()  * 0.85;
-							pageHeight = PageSizes.A8.getWidth() * 0.80;
+						case A8:
+							pageWidth  = PageSize.A8.getHeight()  * 0.85;
+							pageHeight = PageSize.A8.getWidth() * 0.80;
 							break;
-						case PageSizes.A9:
-							pageWidth  = PageSizes.A9.getHeight()  * 0.85;
-							pageHeight = PageSizes.A9.getWidth() * 0.80;
+						case A9:
+							pageWidth  = PageSize.A9.getHeight()  * 0.85;
+							pageHeight = PageSize.A9.getWidth() * 0.80;
 							break;
-						case PageSizes.A10:
-							pageWidth  = PageSizes.A10.getHeight()  * 0.85;
-							pageHeight = PageSizes.A10.getWidth() * 0.80;
+						case A10:
+							pageWidth  = PageSize.A10.getHeight()  * 0.85;
+							pageHeight = PageSize.A10.getWidth() * 0.80;
 							break;
-						case PageSizes.B0:
-							pageWidth  = PageSizes.B0.getHeight()  * 0.85;
-							pageHeight = PageSizes.B0.getWidth() * 0.80;
+						case B0:
+							pageWidth  = PageSize.B0.getHeight()  * 0.85;
+							pageHeight = PageSize.B0.getWidth() * 0.80;
 							break;
-						case PageSizes.B1:
-							pageWidth  = PageSizes.B1.getHeight()  * 0.85;
-							pageHeight = PageSizes.B1.getWidth() * 0.80;
+						case B1:
+							pageWidth  = PageSize.B1.getHeight()  * 0.85;
+							pageHeight = PageSize.B1.getWidth() * 0.80;
 							break;
-						case PageSizes.B2:
-							pageWidth  = PageSizes.B2.getHeight()  * 0.85;
-							pageHeight = PageSizes.B2.getWidth() * 0.80;
+						case B2:
+							pageWidth  = PageSize.B2.getHeight()  * 0.85;
+							pageHeight = PageSize.B2.getWidth() * 0.80;
 							break;
-						case PageSizes.B3:
-							pageWidth  = PageSizes.B3.getHeight()  * 0.85;
-							pageHeight = PageSizes.B3.getWidth() * 0.80;
+						case B3:
+							pageWidth  = PageSize.B3.getHeight()  * 0.85;
+							pageHeight = PageSize.B3.getWidth() * 0.80;
 							break;
-						case PageSizes.B4:
-							pageWidth  = PageSizes.B4.getHeight()  * 0.85;
-							pageHeight = PageSizes.B4.getWidth() * 0.80;
+						case B4:
+							pageWidth  = PageSize.B4.getHeight()  * 0.85;
+							pageHeight = PageSize.B4.getWidth() * 0.80;
 							break;
-						case PageSizes.B5:
-							pageWidth  = PageSizes.B5.getHeight()  * 0.85;
-							pageHeight = PageSizes.B5.getWidth() * 0.80;
+						case B5:
+							pageWidth  = PageSize.B5.getHeight()  * 0.85;
+							pageHeight = PageSize.B5.getWidth() * 0.80;
 							break;
-						case PageSizes.B6:
-							pageWidth  = PageSizes.B6.getHeight()  * 0.85;
-							pageHeight = PageSizes.B6.getWidth() * 0.80;
+						case B6:
+							pageWidth  = PageSize.B6.getHeight()  * 0.85;
+							pageHeight = PageSize.B6.getWidth() * 0.80;
 							break;
-						case PageSizes.B7:
-							pageWidth  = PageSizes.B7.getHeight()  * 0.85;
-							pageHeight = PageSizes.B7.getWidth() * 0.80;
+						case B7:
+							pageWidth  = PageSize.B7.getHeight()  * 0.85;
+							pageHeight = PageSize.B7.getWidth() * 0.80;
 							break;
-						case PageSizes.B8:
-							pageWidth  = PageSizes.B8.getHeight()  * 0.85;
-							pageHeight = PageSizes.B8.getWidth() * 0.80;
+						case B8:
+							pageWidth  = PageSize.B8.getHeight()  * 0.85;
+							pageHeight = PageSize.B8.getWidth() * 0.80;
 							break;
-						case PageSizes.B9:
-							pageWidth  = PageSizes.B9.getHeight()  * 0.85;
-							pageHeight = PageSizes.B9.getWidth() * 0.80;
+						case B9:
+							pageWidth  = PageSize.B9.getHeight()  * 0.85;
+							pageHeight = PageSize.B9.getWidth() * 0.80;
 							break;
-						case PageSizes.B10:
-							pageWidth  = PageSizes.B10.getHeight()  * 0.85;
-							pageHeight = PageSizes.B10.getWidth() * 0.80;
+						case B10:
+							pageWidth  = PageSize.B10.getHeight()  * 0.85;
+							pageHeight = PageSize.B10.getWidth() * 0.80;
 							break;
-						case PageSizes.ArchE:
-							pageWidth  = PageSizes.ARCH_E.getHeight()  * 0.85;
-							pageHeight = PageSizes.ARCH_E.getWidth() * 0.80;
+						case ArchE:
+							pageWidth  = PageSize.ARCH_E.getHeight()  * 0.85;
+							pageHeight = PageSize.ARCH_E.getWidth() * 0.80;
 							break;
-						case PageSizes.ArchD:
-							pageWidth  = PageSizes.ARCH_D.getHeight()  * 0.85;
-							pageHeight = PageSizes.ARCH_D.getWidth() * 0.80;
+						case ArchD:
+							pageWidth  = PageSize.ARCH_D.getHeight()  * 0.85;
+							pageHeight = PageSize.ARCH_D.getWidth() * 0.80;
 							break;
-						case PageSizes.ArchC:
-							pageWidth  = PageSizes.ARCH_C.getHeight()  * 0.85;
-							pageHeight = PageSizes.ARCH_C.getWidth() * 0.80;
+						case ArchC:
+							pageWidth  = PageSize.ARCH_C.getHeight()  * 0.85;
+							pageHeight = PageSize.ARCH_C.getWidth() * 0.80;
 							break;
-						case PageSizes.ArchB:
-							pageWidth  = PageSizes.ARCH_B.getHeight()  * 0.85;
-							pageHeight = PageSizes.ARCH_B.getWidth() * 0.80;
+						case ArchB:
+							pageWidth  = PageSize.ARCH_B.getHeight()  * 0.85;
+							pageHeight = PageSize.ARCH_B.getWidth() * 0.80;
 							break;
-						case PageSizes.ArchA:
-							pageWidth  = PageSizes.ARCH_A.getHeight()  * 0.85;
-							pageHeight = PageSizes.ARCH_A.getWidth() * 0.80;
+						case ArchA:
+							pageWidth  = PageSize.ARCH_A.getHeight()  * 0.85;
+							pageHeight = PageSize.ARCH_A.getWidth() * 0.80;
 							break;
-						case PageSizes.FLSA:
-							pageWidth  = PageSizes.FLSA.getHeight()  * 0.85;
-							pageHeight = PageSizes.FLSA.getWidth() * 0.80;
+						case FLSA:
+							pageWidth  = PageSize.FLSA.getHeight()  * 0.85;
+							pageHeight = PageSize.FLSA.getWidth() * 0.80;
 							break;
-						case PageSizes.FLSE:
-							pageWidth  = PageSizes.FLSE.getHeight()  * 0.85;
-							pageHeight = PageSizes.FLSE.getWidth() * 0.80;
+						case FLSE:
+							pageWidth  = PageSize.FLSE.getHeight()  * 0.85;
+							pageHeight = PageSize.FLSE.getWidth() * 0.80;
 							break;
-						case PageSizes.HalfLetter:
-							pageWidth  = PageSizes.HALFLETTER.getHeight()  * 0.85;
-							pageHeight = PageSizes.HALFLETTER.getWidth() * 0.80;
+						case HalfLetter:
+							pageWidth  = PageSize.HALFLETTER.getHeight()  * 0.85;
+							pageHeight = PageSize.HALFLETTER.getWidth() * 0.80;
 							break;
-						case PageSizes.Ledger:
-							pageWidth  = PageSizes._11X17.getHeight()  * 0.85;
-							pageHeight = PageSizes._11X17.getWidth() * 0.80;
+						case Ledger:
+							pageWidth  = PageSize._11X17.getHeight()  * 0.85;
+							pageHeight = PageSize._11X17.getWidth() * 0.80;
 							break;
-						case PageSizes.ID1:
-							pageWidth  = PageSizes.ID_1.getHeight()  * 0.85;
-							pageHeight = PageSizes.ID_1.getWidth() * 0.80;
+						case ID1:
+							pageWidth  = PageSize.ID_1.getHeight()  * 0.85;
+							pageHeight = PageSize.ID_1.getWidth() * 0.80;
 							break;
-						case PageSizes.ID2:
-							pageWidth  = PageSizes.ID_2.getHeight()  * 0.85;
-							pageHeight = PageSizes.ID_2.getWidth() * 0.80;
+						case ID2:
+							pageWidth  = PageSize.ID_2.getHeight()  * 0.85;
+							pageHeight = PageSize.ID_2.getWidth() * 0.80;
 							break;
-						case PageSizes.ID3:
-							pageWidth  = PageSizes.ID_3.getHeight()  * 0.85;
-							pageHeight = PageSizes.ID_3.getWidth() * 0.80;
+						case ID3:
+							pageWidth  = PageSize.ID_3.getHeight()  * 0.85;
+							pageHeight = PageSize.ID_3.getWidth() * 0.80;
 							break;
-						case PageSizes.CrownQuarto:
-							pageWidth  = PageSizes.CROWN_QUARTO.getHeight()  * 0.85;
-							pageHeight = PageSizes.CROWN_QUARTO.getWidth() * 0.80;
+						case CrownQuarto:
+							pageWidth  = PageSize.CROWN_QUARTO.getHeight()  * 0.85;
+							pageHeight = PageSize.CROWN_QUARTO.getWidth() * 0.80;
 							break;
-						case PageSizes.LargeCrownQuarto:
-							pageWidth  = PageSizes.LARGE_CROWN_QUARTO.getHeight()  * 0.85;
-							pageHeight = PageSizes.LARGE_CROWN_QUARTO.getWidth() * 0.80;
+						case LargeCrownQuarto:
+							pageWidth  = PageSize.LARGE_CROWN_QUARTO.getHeight()  * 0.85;
+							pageHeight = PageSize.LARGE_CROWN_QUARTO.getWidth() * 0.80;
 							break;
-						case PageSizes.DemyQuarto:
-							pageWidth  = PageSizes.DEMY_QUARTO.getHeight()  * 0.85;
-							pageHeight = PageSizes.DEMY_QUARTO.getWidth() * 0.80;
+						case DemyQuarto:
+							pageWidth  = PageSize.DEMY_QUARTO.getHeight()  * 0.85;
+							pageHeight = PageSize.DEMY_QUARTO.getWidth() * 0.80;
 							break;
-						case PageSizes.RoyalQuarto:
-							pageWidth  = PageSizes.ROYAL_QUARTO.getHeight()  * 0.85;
-							pageHeight = PageSizes.ROYAL_QUARTO.getWidth() * 0.80;
+						case RoyalQuarto:
+							pageWidth  = PageSize.ROYAL_QUARTO.getHeight()  * 0.85;
+							pageHeight = PageSize.ROYAL_QUARTO.getWidth() * 0.80;
 							break;
-						case PageSizes.CrownOctavo:
-							pageWidth  = PageSizes.CROWN_OCTAVO.getHeight()  * 0.85;
-							pageHeight = PageSizes.CROWN_OCTAVO.getWidth() * 0.80;
+						case CrownOctavo:
+							pageWidth  = PageSize.CROWN_OCTAVO.getHeight()  * 0.85;
+							pageHeight = PageSize.CROWN_OCTAVO.getWidth() * 0.80;
 							break;
-						case PageSizes.LargeCrownOctavo:
-							pageWidth  = PageSizes.LARGE_CROWN_OCTAVO.getHeight()  * 0.85;
-							pageHeight = PageSizes.LARGE_CROWN_OCTAVO.getWidth() * 0.80;
+						case LargeCrownOctavo:
+							pageWidth  = PageSize.LARGE_CROWN_OCTAVO.getHeight()  * 0.85;
+							pageHeight = PageSize.LARGE_CROWN_OCTAVO.getWidth() * 0.80;
 							break;
-						case PageSizes.DemyOctavo:
-							pageWidth  = PageSizes.DEMY_OCTAVO.getHeight()  * 0.85;
-							pageHeight = PageSizes.DEMY_OCTAVO.getWidth() * 0.80;
+						case DemyOctavo:
+							pageWidth  = PageSize.DEMY_OCTAVO.getHeight()  * 0.85;
+							pageHeight = PageSize.DEMY_OCTAVO.getWidth() * 0.80;
 							break;
-						case PageSizes.RoyalOctavo:
-							pageWidth  = PageSizes.ROYAL_OCTAVO.getHeight()  * 0.85;
-							pageHeight = PageSizes.ROYAL_OCTAVO.getWidth() * 0.80;
+						case RoyalOctavo:
+							pageWidth  = PageSize.ROYAL_OCTAVO.getHeight()  * 0.85;
+							pageHeight = PageSize.ROYAL_OCTAVO.getWidth() * 0.80;
 							break;
-						case PageSizes.SmallPaperback:
-							pageWidth  = PageSizes.SMALL_PAPERBACK.getHeight()  * 0.85;
-							pageHeight = PageSizes.SMALL_PAPERBACK.getWidth() * 0.80;
+						case SmallPaperback:
+							pageWidth  = PageSize.SMALL_PAPERBACK.getHeight()  * 0.85;
+							pageHeight = PageSize.SMALL_PAPERBACK.getWidth() * 0.80;
 							break;
-						case PageSizes.PenguinSmallPaperback:
-							pageWidth  = PageSizes.PENGUIN_SMALL_PAPERBACK.getHeight()  * 0.85;
-							pageHeight = PageSizes.PENGUIN_SMALL_PAPERBACK.getWidth() * 0.80;
+						case PenguinSmallPaperback:
+							pageWidth  = PageSize.PENGUIN_SMALL_PAPERBACK.getHeight()  * 0.85;
+							pageHeight = PageSize.PENGUIN_SMALL_PAPERBACK.getWidth() * 0.80;
 							break;
-						case PageSizes.PenguinLargePaperback:
-							pageWidth  = PageSizes.PENGUIN_LARGE_PAPERBACK.getHeight()  * 0.85;
-							pageHeight = PageSizes.PENGUIN_LARGE_PAPERBACK.getWidth() * 0.80;
+						case PenguinLargePaperback:
+							pageWidth  = PageSize.PENGUIN_LARGE_PAPERBACK.getHeight()  * 0.85;
+							pageHeight = PageSize.PENGUIN_LARGE_PAPERBACK.getWidth() * 0.80;
 							break;	
 						default:
-							pageWidth  = PageSizes.LETTER.getHeight()  * 0.85;
-							pageHeight = PageSizes.LETTER.getWidth() * 0.80;
+							pageWidth  = PageSize.LETTER.getHeight()  * 0.85;
+							pageHeight = PageSize.LETTER.getWidth() * 0.80;
 							break;
 					}
 					break;
 				default:
-					pageWidth  = PageSizes.LETTER.getWidth()  * 0.85;
-					pageHeight = PageSizes.LETTER.getHeight() * 0.80;
+					pageWidth  = PageSize.LETTER.getWidth()  * 0.85;
+					pageHeight = PageSize.LETTER.getHeight() * 0.80;
 					break;
 			}
 			
